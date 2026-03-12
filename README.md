@@ -41,14 +41,20 @@ VPC + EC2
 **Repository Structure**
 ```
 terraform-aws-infrastructure
-│
-├ modules
-│   ├ vpc
-│   └ ec2
-│
-├ main.tf
+├ providers.tf
 ├ variables.tf
-└ outputs.tf
+├ main.tf
+├ outputs.tf
+├ modules
+│  ├ vpc
+│  │  ├ main.tf
+│  │  ├ variables.tf
+│  │  └ outputs.tf
+│  └ ec2
+│     ├ main.tf
+│     ├ variables.tf
+│     └ outputs.tf
+└ README.md
 ```
 
 ---
